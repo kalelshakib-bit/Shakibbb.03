@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shakibbb.03 | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111;
+      color: #eee;
+      line-height: 1.6;
+    }
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 10;
+      background: rgba(17,17,17,.9); backdrop-filter: blur(10px);
+      border-bottom: 1px solid #333;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 16px 7%;
+    }
+    nav .logo { font-weight: 800; letter-spacing: 1px; }
+    nav a { color: #bbb; text-decoration: none; margin-left: 20px; font-size: 14px; }
+    nav a:hover { color: white; }
+    section { padding: 95px 8%; max-width: 1100px; margin: auto; }
+    .hero {
+      min-height: 100vh; display: grid; place-items: center;
+      text-align: center;
+      background: radial-gradient(circle at 50% 20%, #333 0, #111 45%);
+    }
+    .hero h1 { font-size: clamp(42px, 8vw, 82px); line-height: 1; }
+    .hero h1 span { color: #aaa; }
+    .hero p { color: #aaa; margin: 22px auto; max-width: 650px; font-size: 18px; }
+    .btn {
+      display: inline-block; padding: 12px 22px; border: 1px solid #777;
+      border-radius: 30px; color: white; text-decoration: none;
+      transition: .25s;
+    }
+    .btn:hover { background: #eee; color: #111; }
+    .title { font-size: 34px; margin-bottom: 30px; }
+    .title span { color: #888; }
+    .about {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 30px;
+    }
+    .card {
+      background: #1b1b1b; border: 1px solid #333; border-radius: 18px;
+      padding: 25px; transition: transform .25s, border-color .25s;
+    }
+    .card:hover { transform: translateY(-5px); border-color: #777; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card h3 { margin-bottom: 8px; }
+    .muted { color: #999; }
+    .contact { text-align: center; }
+    footer { text-align: center; padding: 30px; color: #777; border-top: 1px solid #292929; }
+    @media (max-width: 700px) {
+      nav { padding: 14px 5%; }
+      nav .links { display: none; }
+      section { padding: 80px 6%; }
+      .about, .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">shakibbb.03</div>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#interests">Interests</a>
+    <a href="#achievement">Achievement</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <p>PERSONAL PORTFOLIO</p>
+    <h1>Mohammed <span>Shakib</span></h1>
+    <p>A boy interested in everything — from sports and movies to marching and discovering new things.</p>
+    <a class="btn" href="#about">Explore My Portfolio ↓</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="title">About <span>Me</span></h2>
+  <div class="about">
+    <div class="card">
+      <h3>Who I Am</h3>
+      <p class="muted">I'm Mohammed Shakib, someone who enjoys exploring different interests and experiences. I like keeping myself involved in things that challenge, entertain and inspire me.</p>
+    </div>
+    <div class="card">
+      <h3>Education</h3>
+      <p class="muted">Completed SSLC and continuing my journey of learning, exploring and building new skills.</p>
+    </div>
+  </div>
+</section>
+
+<section id="interests">
+  <h2 class="title">My <span>Interests</span></h2>
+  <div class="cards">
+    <div class="card"><h3>🏆 Sports</h3><p class="muted">I enjoy sports, competition and the energy of being part of a team.</p></div>
+    <div class="card"><h3>🎬 Movies</h3><p class="muted">Movies are one of my favourite ways to experience stories, characters and different worlds.</p></div>
+    <div class="card"><h3>🥁 Marching</h3><p class="muted">Marching is another passion that brings discipline, teamwork and excitement.</p></div>
+  </div>
+</section>
+
+<section id="achievement">
+  <h2 class="title">My <span>Achievement</span></h2>
+  <div class="card">
+    <h3>🏅 Sports Award</h3>
+    <p class="muted">Proud recipient of an award in sports — a memorable achievement and motivation to keep improving.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="title">Let's <span>Connect</span></h2>
+  <p class="muted">Want to get in touch?</p>
+  <br>
+  <a class="btn" href="mailto:kalelshakib@gmail.com">kalelshakib@gmail.com</a>
+</section>
+
+<footer>© 2026 Mohammed Shakib. All rights reserved.</footer>
+
+</body>
+</html>
